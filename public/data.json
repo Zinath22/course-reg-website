@@ -1,0 +1,66 @@
+[
+    {
+      "cover_image": "https://i.ibb.co/cQcd802/Rectangle-2.png",
+      "course_title": "Introduction to Web Development",
+      "course_details": "Learn the basics of HTML, CSS, and JavaScript to kickstart your web development journey.",
+      "credit_hr": 3,
+      "price": 49.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/KGqf2dZ/Rectangle-2-1.png",
+      "course_title": "Data Science Fundamentals",
+      "course_details": "Explore the world of data science, data analysis, and machine learning with hands-on projects.",
+      "credit_hr": 4,
+      "price": 79.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/WHrxSS6/Rectangle-2-2.png",
+      "course_title": "Graphic Design Mastery",
+      "course_details": "Master Adobe Photoshop and Illustrator to create stunning graphics and designs.",
+      "credit_hr": 2,
+      "price": 59.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/KKwq7Sy/Rectangle-2-3.png",
+      "course_title": "Mobile App Development with React Native",
+      "course_details": "Build cross-platform mobile apps using React Native and JavaScript.",
+      "credit_hr": 3,
+      "price": 69.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/jRvgz8f/Rectangle-2-4.png",
+      "course_title": "Business Strategy and Management",
+      "course_details": "Learn essential business strategies, management techniques, and leadership skills.",
+      "credit_hr": 4,
+      "price": 89.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/rZ7JGPd/Rectangle-2-5.png",
+      "course_title": "Digital Marketing Essentials",
+      "course_details": "Master the fundamentals of digital marketing, SEO, and social media advertising.",
+      "credit_hr": 2,
+      "price": 49.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/QfpPvbN/Rectangle-2-6.png",
+      "course_title": "Artificial Intelligence and Machine Learning",
+      "course_details": "Explore AI and ML algorithms, and build intelligent systems.",
+      "credit_hr": 4,
+      "price": 79.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/n74pzVM/Rectangle-3.png",
+      "course_title": "Photography Basics",
+      "course_details": "Learn the fundamentals of photography, camera settings, and composition.",
+      "credit_hr": 2,
+      "price": 39.99
+    },
+    {
+      "cover_image": "https://i.ibb.co/W248MwL/Rectangle-3-1.png",
+      "course_title": "Creative Writing Workshop",
+      "course_details": "Unlock your creativity and develop your writing skills with expert guidance.",
+      "credit_hr": 2,
+      "price": 49.99
+    }
+  ]
+  
