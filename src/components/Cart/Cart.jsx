@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
 
-const Cart = ({ selectedCourse, remaining, totalCredit }) => {
+const Cart = ({ selectedCourse, remaining, totalCredit,totalPrice }) => {
     // console.log(selectedCourse)
 
     return (
@@ -20,6 +20,7 @@ const Cart = ({ selectedCourse, remaining, totalCredit }) => {
             <h1 className="text-2xl border-t-2 py-4 mt-10">
                 Total Credit Hour:{totalCredit}
             </h1>
+            <h1 className="text-2xl pb-5 border-t-2">Total price:{totalPrice}</h1>
         </div>
     );
 };
@@ -27,6 +28,7 @@ Cart.propTypes = {
     remaining: PropTypes.number,
     selectedCourse: PropTypes.array,
     totalCredit: PropTypes.array,
+    totalPrice:PropTypes.array,
 };
 
 export default Cart;

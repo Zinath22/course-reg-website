@@ -14,6 +14,7 @@ const Home = () => {
    const [selectedCourse, setselectedCourse] = useState([])
    const[remaining, setRemaining] = useState(0)
    const [totalCredit , setTotalCredit] = useState(0)
+   const [totalPrice, setTotalPrice] = useState(0)
    
     useEffect(() =>{
         fetch('data.json')
@@ -29,9 +30,11 @@ const Home = () => {
        } else{
         let count = course.credit_hr;
         let total = course.credit_hr;
+        let priceSum = course.price;
         selectedCourse.forEach(item => {
             count +=  item.credit_hr;
             total += item.credit_hr;
+            priceSum = priceSum + item.price;
         }
         )
         const totalRemaining = 20 - count;
@@ -41,6 +44,7 @@ const Home = () => {
             setTotalCredit(total)
             setRemaining(totalRemaining)
             setselectedCourse([...selectedCourse, course])
+            setTotalPrice(priceSum)
 
         }
     }
@@ -87,7 +91,8 @@ const Home = () => {
             <div className="cart">
             <Cart selectedCourse={selectedCourse} 
             remaining ={remaining}
-            totalCredit={totalCredit}>
+            totalCredit={totalCredit}
+            totalPrice={totalPrice}>
 
             </Cart>
         </div>
