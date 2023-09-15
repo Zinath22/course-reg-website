@@ -25,7 +25,7 @@ const Home = () => {
         // console.log(isExist)
         
        if (isExist){
-        return toast.error('already slected');
+        return toast.error('This course Already slected');
        } else{
         let count = course.credit_hr;
         let total = course.credit_hr;
@@ -36,7 +36,7 @@ const Home = () => {
         )
         const totalRemaining = 20 - count;
         if(count > 20){
-           return toast.error('limited credit hour');
+           return toast.error('Limited credit hour');
         }else{
             setTotalCredit(total)
             setRemaining(totalRemaining)
