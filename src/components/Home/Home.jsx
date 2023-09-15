@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Cart from '../Cart/Cart'
 import {  FaBookmark } from 'react-icons/fa'
+import toast from "react-hot-toast";
 
 /* eslint-disable react/jsx-key */
 
@@ -21,10 +22,10 @@ const Home = () => {
     }, [])
     const handleSelectCourse = (course) => {
         const isExist = selectedCourse.find(item => item.id == course.id);
-        console.log(isExist)
+        // console.log(isExist)
         
        if (isExist){
-        alert ("already selected")
+        return toast.error('already slected');
        } else{
         let count = course.credit_hr;
         let total = course.credit_hr;
@@ -35,7 +36,7 @@ const Home = () => {
         )
         const totalRemaining = 20 - count;
         if(count > 20){
-            alert('limited credit hour')
+           return toast.error('limited credit hour');
         }else{
             setTotalCredit(total)
             setRemaining(totalRemaining)
