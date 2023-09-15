@@ -21,30 +21,28 @@ const Home = () => {
     }, [])
     const handleSelectCourse = (course) => {
         const isExist = selectedCourse.find(item => item.id == course.id);
-        // console.log(isExist)
+        console.log(isExist)
         
        if (isExist){
         alert ("already selected")
        } else{
         let count = course.credit_hr;
-        let hour = course.credit_hr;
-        selectedCourse.forEach((item) => {
+        let total = course.credit_hr;
+        selectedCourse.forEach(item => {
             count +=  item.credit_hr;
+            total += item.credit_hr;
         }
         )
-        const totalRemaining = 20 - totalCredit;
+        const totalRemaining = 20 - count;
         if(count > 20){
             alert('limited credit hour')
         }else{
-            setTotalCredit(hour)
+            setTotalCredit(total)
             setRemaining(totalRemaining)
             setselectedCourse([...selectedCourse, course])
 
         }
-     
-
-        
-       }
+    }
        
     }
     // console.log(selectedCourse)
