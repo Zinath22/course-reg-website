@@ -1,21 +1,51 @@
-/* eslint-disable react/jsx-key */
+
 import { useEffect } from "react";
 import { useState } from "react";
-import {  FaBookmark } from 'react-icons/fa'
 import Cart from '../Cart/Cart'
+import {  FaBookmark } from 'react-icons/fa'
+
+/* eslint-disable react/jsx-key */
 
 
-// import cover from '../../assets/images/Rectangle 2-1.png'
+
 const Home = () => {
    const[allCourse, setAllCourse] = useState([])
    const [selectedCourse, setselectedCourse] = useState([])
+   const[remaining, setRemaining] = useState(0)
+   const [totalCredit , setTotalCredit] = useState(0)
+   
     useEffect(() =>{
         fetch('data.json')
         .then(res => res.json())
         .then(data => setAllCourse(data))
     }, [])
     const handleSelectCourse = (course) => {
-       setselectedCourse([...selectedCourse, course])
+        const isExist = selectedCourse.find(item => item.id == course.id);
+        // console.log(isExist)
+        
+       if (isExist){
+        alert ("already selected")
+       } else{
+        let count = course.credit_hr;
+        let hour = course.credit_hr;
+        selectedCourse.forEach((item) => {
+            count +=  item.credit_hr;
+        }
+        )
+        const totalRemaining = 20 - totalCredit;
+        if(count > 20){
+            alert('limited credit hour')
+        }else{
+            setTotalCredit(hour)
+            setRemaining(totalRemaining)
+            setselectedCourse([...selectedCourse, course])
+
+        }
+     
+
+        
+       }
+       
     }
     // console.log(selectedCourse)
 //    console.log(allCourse)
@@ -56,7 +86,11 @@ const Home = () => {
           
             </div>
             <div className="cart">
-            <Cart selectedCourse={selectedCourse}></Cart>
+            <Cart selectedCourse={selectedCourse} 
+            remaining ={remaining}
+            totalCredit={totalCredit}>
+
+            </Cart>
         </div>
            
             </div>
