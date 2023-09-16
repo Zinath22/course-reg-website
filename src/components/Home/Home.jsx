@@ -2,12 +2,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Cart from '../Cart/Cart'
-import {  FaBookmark } from 'react-icons/fa'
+import {  BiBookOpen } from 'react-icons/bi'
 import toast from "react-hot-toast";
-
-/* eslint-disable react/jsx-key */
-
-
 
 const Home = () => {
    const[allCourse, setAllCourse] = useState([])
@@ -29,11 +25,11 @@ const Home = () => {
         return toast.error('This course Already slected');
        } else{
         let count = course.credit_hr;
-        let total = course.credit_hr;
+        let totalCr = course.credit_hr;
         let priceSum = course.price;
         selectedCourse.forEach(item => {
-            count +=  item.credit_hr;
-            total += item.credit_hr;
+            count = count +  item.credit_hr;
+            totalCr = totalCr + item.credit_hr;
             priceSum = priceSum + item.price;
         }
         )
@@ -41,7 +37,7 @@ const Home = () => {
         if(count > 20){
            return toast.error('Limited credit hour');
         }else{
-            setTotalCredit(total)
+            setTotalCredit(totalCr)
             setRemaining(totalRemaining)
             setselectedCourse([...selectedCourse, course])
             setTotalPrice(priceSum)
@@ -72,9 +68,9 @@ const Home = () => {
           <div className="justify-start items-start text-left px-5 ">
           <h2 className="mt-2 mb-2 text-lg font-bold">{course.course_title}</h2>
           <p className="text-lg mb-2">{course.course_details}</p>
-          <div className="flex gap-5">
+          <div className="flex justify-between gap-5">
               <h3 className="text-lg"><span className="font-bold">$ </span>Price:{course.price}</h3>
-              <button><FaBookmark></FaBookmark></button>
+            <BiBookOpen className="text-2xl"></BiBookOpen>
               <h3>Credit:{course.credit_hr}hr</h3>
           </div>
           
@@ -99,11 +95,7 @@ const Home = () => {
            
             </div>
             
-            
-        
-        
-       
-    );
+            );
 };
 
 export default Home;

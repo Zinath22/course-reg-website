@@ -1,5 +1,4 @@
-/* eslint-disable react/jsx-key */
-/* eslint-disable react/prop-types */
+
 import PropTypes from "prop-types";
 
 const Cart = ({ selectedCourse, remaining, totalCredit,totalPrice }) => {
@@ -13,14 +12,14 @@ const Cart = ({ selectedCourse, remaining, totalCredit,totalPrice }) => {
             <h1 className="text-2xl font-bold py-5">Course Name:</h1>
 
             {selectedCourse.map((course) => (
-                <li key={course.id} className="list-decimal mb-3">
+                <li key={course.id} className="list-decimal mb-3 text-xl">
                     {course.course_title}
                 </li>
             ))}
             <h1 className="text-2xl border-t-2 py-4 mt-10">
-                Total Credit Hour:{totalCredit}
+                Total Credit Hour: {totalCredit}
             </h1>
-            <h1 className="text-2xl pb-5 border-t-2">Total price:{totalPrice}</h1>
+            <h1 className="text-2xl pb-5 border-t-2">Total price: {totalPrice}</h1>
         </div>
     );
 };
