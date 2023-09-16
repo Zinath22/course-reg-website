@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-    <div className="justify-center items-center text-center mt-10 mx-20">
+    <div >
     <Nav></Nav>
     <Toaster></Toaster>
     <Home></Home>

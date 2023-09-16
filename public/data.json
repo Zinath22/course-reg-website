@@ -3,7 +3,7 @@
       "id": 1,
       "cover_image": "https://i.ibb.co/WHrxSS6/Rectangle-2-2.png",
       "course_title": "Introduction to C Programming",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": " Learn the fundamentals of C programming in this introductory course with practical examples and exercises.",
       "credit_hr": 1,
       "price": 15000
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "cover_image": "https://i.ibb.co/KKwq7Sy/Rectangle-2-3.png",
       "course_title": "Introduction to Algorithms",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": "Explore the world of algorithms, their design, and analysis to solve complex problems efficiently.",
       "credit_hr": 2,
       "price": 25000
     },
@@ -19,7 +19,7 @@
       "id": 3,
       "cover_image": "https://i.ibb.co/jRvgz8f/Rectangle-2-4.png",
       "course_title": "Introduction to C++ for DSA",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": " Master C++ for Data Structures and Algorithms with hands-on coding and algorithm implementation.",
       "credit_hr": 10,
       "price": 10000
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "cover_image": "https://i.ibb.co/n74pzVM/Rectangle-3.png",
       "course_title": "Basic Data Structures",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": " Gain expertise in essential data structures like arrays, linked lists, and trees for efficient data management.",
       "credit_hr": 5,
       "price": 35000
     },
@@ -35,7 +35,7 @@
       "id": 5,
       "cover_image": "https://i.ibb.co/cQcd802/Rectangle-2.png",
       "course_title": "Introduction to OOP Python",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": "Discover the power of object-oriented programming in Python, ideal for building robust and scalable applications.",
       "credit_hr": 5,
       "price": 19000
     },
@@ -43,7 +43,7 @@
       "id": 6,
       "cover_image": "https://i.ibb.co/rZ7JGPd/Rectangle-2-5.png",
       "course_title": "Software Engineering",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": "Dive into software development methodologies, project management, and best practices in this comprehensive course.",
       "credit_hr": 2,
       "price": 23000
     },
@@ -51,7 +51,7 @@
       "id": 7,
       "cover_image": "https://i.ibb.co/W248MwL/Rectangle-3-1.png",
       "course_title": "AWS, Cloud Computing",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": "Learn Amazon Web Services (AWS) and cloud computing concepts to deploy and manage scalable applications.",
       "credit_hr": 5,
       "price": 35000
     },
@@ -59,7 +59,7 @@
       "id": 8,
       "cover_image": "https://i.ibb.co/KGqf2dZ/Rectangle-2-1.png",
       "course_title": "Database (MySQL)",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": "Acquire skills in MySQL database management, from schema design to querying and optimization.",
       "credit_hr": 5,
       "price": 19000
     },
@@ -67,7 +67,7 @@
       "id": 9,
       "cover_image": " https://i.ibb.co/QfpPvbN/Rectangle-2-6.png",
       "course_title": "Problem-Solving Part",
-      "course_details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "course_details": "Hone your problem-solving abilities through algorithmic thinking and problem-solving techniques in this course.",
       "credit_hr": 2,
       "price": 23000
     }
