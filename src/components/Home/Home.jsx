@@ -66,7 +66,7 @@ const Home = () => {
           
           <div className="justify-start items-start text-left px-5 ">
           <h2 className="mt-2 mb-2 text-lg font-bold">{course.course_title}</h2>
-          <p className="text-sm mb-2 text-[#1C1B1B99]">{course.course_details}</p>
+          <p className="text-sm mb-2 h-[75px] text-[#1C1B1B99]">{course.course_details}</p>
           <div className="flex  justify-between gap-5">
               <h3 className="text-lg"><span className="font-bold">$ </span>Price:{course.price}</h3>
             <BiBookOpen className="text-2xl"></BiBookOpen>
